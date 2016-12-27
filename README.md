@@ -1,6 +1,6 @@
 # Secure log collection from DMZ
 
-The steps outlined below will demonstrate a way to securely transmit logs from the DMZ to an internal Graylog server. This method uses TLS to encrypt all communication and does not require any new inbound rules on the firewall. In my examples I will be using Windows based servers and clients.
+The steps outlined below will demonstrate how to securely transmit logs from the DMZ to an internal Graylog server. This method uses TLS to encrypt all communication and does not require any new inbound rules on the firewall. In my examples I will be using Windows based servers and clients. 
 
 
 
