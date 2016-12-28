@@ -378,10 +378,15 @@ certtool -i --infile certs/nxlog.crt
 # Source documentation/Credits:
 
 https://github.com/Graylog2/graylog-guide-syslog-amqp
+
 http://stackoverflow.com/questions/26789903/using-nxlog-to-ship-logs-in-to-logstash-from-windows-using-om-ssl
+
 https://www.ulyaoth.net/resources/tutorial-install-logstash-and-kibana-on-a-windows-server.34/
+
 https://www.rabbitmq.com/install-windows.html
+
 https://www.rabbitmq.com/ssl.html
+
 https://nxlog.co/docs/nxlog-ce/nxlog-reference-manual.html
 
 
