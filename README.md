@@ -38,8 +38,8 @@ This computer does not need to be joined to the domain.
 Note: I ran the following on a Linux computer that already had certtools installed. If you're planning to run them in Windows you'll need to download the tools [here](http://www.gnutls.org/download.html)
 
 
-mkdir ~/nxlog-logstash
-cd ~/nxlog-logstash/logstash
+mkdir ~/logstash
+cd ~/logstash
 mkdir certs private
 certtool --generate-privkey --bits 2048 --outfile private/logstash-ca.key
 
