@@ -141,6 +141,7 @@ LogFile %ROOT%\data\nxlog.log
 
 - [Download Logstash](https://artifacts.elastic.co/downloads/logstash/logstash-5.1.1.zip).
   - Uncompress Logstash to C:\Logstash
+  - Copy logstash-ca.crt, logstash.crt and logstash.key generated in the previous steps to C:\logstash\config\tls\
   - Save the following config file to C:\logstash\config\logstash.json
 ```
 input {
@@ -348,6 +349,30 @@ Use the following:
 Make sure the extractors are in alphabetical order
 
 # Troubleshooting
+
+## NXLog
+
+The log file can be found in C:\Program Files (x86)\nxlog\data\nxlog.log
+
+## Logstash
+
+Stop the Logstash service and run the following from command line:
+
+```
+cd C:\logstash\
+C:\logstash\bin\logstash.bat -f C:\logstash\config\logstash.json
+```
+
+## RabbitMQ
+
+The log file can be found in %AppData%\RabbitMQ
+
+## TLS
+
+openssl s_client -CAfile certs/logstash-ca.crt -connect dmzlogserver:12201
+
+certtool -i --infile certs/nxlog.crt
+
 
 
 # Source documentation/Credits:
