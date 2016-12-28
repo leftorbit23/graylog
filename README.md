@@ -259,7 +259,7 @@ Select input - Raw/Plaintest AMQP (Launch new input)
 Title: Windows Server Eventlog (DMZ)
 Exchange: log-messages
 Queue: log-messages
-Broker hostname: **dmzlogserver**
+Broker hostname: dmzlogserver
 Username: rabbitmquser
 Check Bind to exchange
 Password: rabbitmqpassword
