@@ -31,11 +31,10 @@ certtool --generate-certificate --bits 2048 --load-request private/nxlog.csr --o
     Host        dmzlogserver
     Port        12201
     CAFile      %ROOT%\tls\logstash-ca.crt
+    ##Add client cert and key
     CertFile    %ROOT%\tls\nxlog.crt
     CertKeyFile %ROOT%\tls\nxlog.key
 
-    #AllowUntrusted  TRUE
-    #OutputType  GELF
     OutputType  LineBased
     Exec        to_json();
 </Output>
@@ -54,6 +53,7 @@ input {
     ssl_cert => "tls/logstash.crt"
     ssl_key => "tls/logstash.key"
     ssl_enable => true
+    ##Enable ssl verification
     ssl_verify => true
   }
 }
