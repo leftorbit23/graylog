@@ -9,7 +9,7 @@
 encryption_key
 
 # Whether this certificate will be used for a TLS client
-tls_www_server
+tls_www_client
 
 expiration_days = 3650
 ```
