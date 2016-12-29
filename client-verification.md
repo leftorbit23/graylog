@@ -21,7 +21,8 @@ certtool --generate-privkey --bits 2048 --outfile private/nxlog.key
 
 certtool --generate-request --bits 2048 --load-privkey private/nxlog.key --outfile private/nxlog.csr
 
-certtool --generate-certificate --bits 2048 --load-request private/nxlog.csr --outfile certs/nxlog.crt --load-ca-certificate certs/logstash-ca.crt --load-ca-privkey private/logstash-ca.key --template logstash-rules.cnf
+certtool --generate-certificate --bits 2048 --load-request private/nxlog.csr --outfile certs/nxlog.crt --load-ca-certificate certs/logstash-ca.crt --load-ca-privkey private/logstash-ca.key --template nxlog-rules.cnf
+
 
 ## Add cert and key to nxlog config
 
